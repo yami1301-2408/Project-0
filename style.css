@@ -5,30 +5,54 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 .container {
     background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+    max-width: 400px;
+    width: 90%;
 }
 
 .hidden { display: none; }
 
+h1, h2 { color: #ff4d6d; }
+p { font-size: 1.2rem; color: #555; }
+
 button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
+    padding: 15px 25px;
+    font-size: 1.1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     margin: 10px;
-    transition: 0.3s;
+    transition: transform 0.2s, background-color 0.3s;
+    font-weight: bold;
 }
 
-#yesButton { background-color: #ff4d6d; color: white; }
-#noButton { background-color: #adb5bd; color: white; position: absolute; }
+#openButton, #yesButton {
+    background-color: #ff4d6d;
+    color: white;
+}
 
-img { max-width: 200px; margin-bottom: 20px; }
+#openButton:hover, #yesButton:hover {
+    background-color: #ff758f;
+    transform: scale(1.1);
+}
+
+#noButton {
+    background-color: #adb5bd;
+    color: white;
+    position: absolute; /* Needed for the runaway effect */
+}
+
+.personal-message {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+img { width: 100%; max-width: 250px; border-radius: 15px; margin-bottom: 20px; }
