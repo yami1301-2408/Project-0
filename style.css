@@ -1,0 +1,34 @@
+body {
+    background-color: #ffeef2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hidden { display: none; }
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#yesButton { background-color: #ff4d6d; color: white; }
+#noButton { background-color: #adb5bd; color: white; position: absolute; }
+
+img { max-width: 200px; margin-bottom: 20px; }
